@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #ddd;
+  background: #16384c;
+  /* border: 3px solid green; */
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  /* border: 3px solid green; */
+}
+
+h1 {
+  padding: 1rem;
+  text-align: center;
+  /* border: 3px solid green; */
+}
+
+span {
+  color: #ff8800;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 {
+  padding: 0.5rem;
+  text-align: center;
+  /* border: 3px solid green; */
+  text-transform: capitalize;
+}
+
+p {
+  /* border: 3px solid green; */
+  font-style: italic;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+a {
+  padding: 0.25rem;
+  margin-top: 1rem;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#survey-form {
+  border: 3px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 400px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+#survey-form .form-group {
+  /* border: 3px solid pink; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #16384c;
+  width: 100%;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#survey-form .form-group input {
+  padding: 0.25rem;
+}
+
+#number,
+#dropdown {
+  width: 35%;
+}
+
+.suggestions label {
+  margin-top: 1rem;
+}
+
+button {
+  background: #f80;
+  padding: 0.5rem;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  color: #16384c;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ffd900;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+}
+
+a:link,
+a:visited {
+  background-color: #999;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: #666;
+  color: #ddd;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+    padding: 0.25rem;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding: 0;
+  }
+}
