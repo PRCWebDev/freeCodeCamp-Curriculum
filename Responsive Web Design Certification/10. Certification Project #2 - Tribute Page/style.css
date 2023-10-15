@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  color: #ddd;
+  line-height: 1.2;
+  background: rgb(22, 56, 76);
+  /* border: 3px solid green; */
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  /* border: 3px solid green; */
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  /* border: 3px solid green; */
+}
+
+#img-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* border: 3px solid green; */
+}
+
+#image {
+  max-width: 80%;
+  /* max-width: 100%; */
+  height: auto;
+  position: relative;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+#img-caption {
+  padding: 0.5rem;
+}
+
+a {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 1000px;
+  color: rgba(22, 56, 76, 0.9);
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+a:link,
+a:visited {
+  background-color: #999;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: #666;
+  color: #f2f2f2;
+  color: #ddd;
+}
+
+/* #tribute-info {
+  border: 3px solid green;
+} */
+
+p {
+  margin: 1.5rem 1rem;
+  /* border: 3px solid green; */
+}
