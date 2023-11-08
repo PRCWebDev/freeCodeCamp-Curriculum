@@ -28,103 +28,103 @@ multi-line comment */
 
 ////////////////////////////////////////
 //  ? Declare JavaScript Variables
-var myName;
+// var myName;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Storing Values with the Assignment Operator
 // Setup
-var a;
-// Only change code below this line
-a = 7;
+// var a;
+// // Only change code below this line
+// a = 7;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Assigning the Value of One Variable to Another
 // Setup
-var a;
-a = 7;
-var b;
-// Only change code below this line
-b = a;
+// var a;
+// a = 7;
+// var b;
+// // Only change code below this line
+// b = a;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Initializing Variables with the Assignment Operator
-var a = 9;
+// var a = 9;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Declare String Variables
-var myFirstName = 'Lorem';
-var myLastName = 'Ipsum';
+// var myFirstName = 'Lorem';
+// var myLastName = 'Ipsum';
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Understanding Uninitialized Variables
 // Only change code below this line
-var a = 5;
-var b = 10;
-var c = 'I am a';
-// Only change code above this line
-a = a + 1;
-b = b + 5;
-c = c + ' String!';
+// var a = 5;
+// var b = 10;
+// var c = 'I am a';
+// // Only change code above this line
+// a = a + 1;
+// b = b + 5;
+// c = c + ' String!';
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Understanding Case Sensitivity in Variables
 // Variable declarations
-var studlyCapVar;
-var properCamelCase;
-var titleCaseOver;
-// Variable assignments
-studlyCapVar = 10;
-properCamelCase = 'A String';
-titleCaseOver = 9000;
+// var studlyCapVar;
+// var properCamelCase;
+// var titleCaseOver;
+// // Variable assignments
+// studlyCapVar = 10;
+// properCamelCase = 'A String';
+// titleCaseOver = 9000;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Explore Differences Between the var and let Keywords
-let catName;
-let quote;
-let catSound;
-function catTalk() {
-  'use strict';
+// let catName;
+// let quote;
+// let catSound;
+// function catTalk() {
+//   'use strict';
 
-  catName = 'Oliver';
-  catSound = 'Meow!';
-  quote = catName + ' says ' + catSound;
-}
-catTalk();
+//   catName = 'Oliver';
+//   catSound = 'Meow!';
+//   quote = catName + ' says ' + catSound;
+// }
+// catTalk();
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Declare a Read-Only Variable with the const Keyword
-const FCC = 'freeCodeCamp'; // Change this line
-let fact = 'is cool!'; // Change this line
-fact = 'is awesome!';
-console.log(FCC, fact); // Change this line
+// const FCC = 'freeCodeCamp'; // Change this line
+// let fact = 'is cool!'; // Change this line
+// fact = 'is awesome!';
+// console.log(FCC, fact); // Change this line
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Add Two Numbers with JavaScript
-const sum = 10 + 10;
+// const sum = 10 + 10;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Subtract One Number from Another with JavaScript
-const difference = 45 - 33;
+// const difference = 45 - 33;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Multiply Two Numbers with JavaScript
-const product = 8 * 10;
+// const product = 8 * 10;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Divide One Number by Another with JavaScript
-const quotient = 66 / 33;
+// const quotient = 66 / 33;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
@@ -136,16 +136,16 @@ const quotient = 66 / 33;
 
 ////////////////////////////////////////
 //  ? Decrement a Number with JavaScript
-let myVar = 11;
-// Only change code below this line
-myVar--;
+// let myVar = 11;
+// // Only change code below this line
+// myVar--;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Create Decimal Numbers with JavaScript
-const ourDecimal = 5.7;
-// Only change code below this line
-const myDecimal = 2.22;
+// const ourDecimal = 5.7;
+// // Only change code below this line
+// const myDecimal = 2.22;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
@@ -160,7 +160,7 @@ const myDecimal = 2.22;
 
 ////////////////////////////////////////
 //  ? Finding a Remainder in JavaScript
-const remainder = 11 % 3;
+// const remainder = 11 % 3;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
@@ -301,90 +301,248 @@ const remainder = 11 % 3;
 
 ////////////////////////////////////////
 //  ? Word Blanks
+// const myNoun = 'dog';
+// const myAdjective = 'big';
+// const myVerb = 'ran';
+// const myAdverb = 'quickly';
+// // Only change code below this line
+// const wordBlanks =
+//   'My ' + myAdjective + ' ' + myNoun + ' ' + ' ' + myVerb + ' ' + myAdverb; // Change this line
+// // Only change code above this line
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Store Multiple Values in one Variable using JavaScript Arrays
+// Only change code below this line
+// const myArray = ['lorem', 123];
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Nest one Array within Another Array
+// Only change code below this line
+// const myArray = [['lorem', 123], 456, 'ipsum'];
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Access Array Data with Indexes
+// const myArray = [50, 60, 70];
+// const myData = myArray[0];
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Modify Array Data With Indexes
+// // Setup
+// const myArray = [18, 64, 99];
+// // Only change code below this line
+// myArray[0] = 45;
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Access Multi-Dimensional Arrays With Indexes
+// const myArray = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+//   [[10, 11, 12], 13, 14],
+// ];
+// const myData = myArray[2][1];
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Manipulate Arrays With push Method
+// // Setup
+// const myArray = [
+//   ['John', 23],
+//   ['cat', 2],
+// ];
+// // Only change code below this line
+// myArray.push(['dog', 3]);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Manipulate Arrays With pop Method
+// // Setup
+// const myArray = [
+//   ['John', 23],
+//   ['cat', 2],
+// ];
+// // Only change code below this line
+// const removedFromMyArray = myArray.pop();
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Manipulate Arrays With shift Method
+// // Setup
+// const myArray = [
+//   ['John', 23],
+//   ['dog', 3],
+// ];
+// // Only change code below this line
+// const removedFromMyArray = myArray.shift();
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Manipulate Arrays With unshift Method
+// // Setup
+// const myArray = [
+//   ['John', 23],
+//   ['dog', 3],
+// ];
+// myArray.shift();
+// // Only change code below this line
+// myArray.unshift(['Paul', 35]);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Shopping List
+// const myList = [
+//   ['l', 1],
+//   ['o', 2],
+//   ['r', 3],
+//   ['e', 4],
+//   ['m', 5],
+// ];
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Write Reusable JavaScript with Functions
+// function reusableFunction() {
+//   console.log('Hi World');
+// }
+// reusableFunction();
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Passing Values to Functions with Arguments
+// function functionWithArgs(param1, param2) {
+//   console.log(param1 + param2);
+// }
+// functionWithArgs(1, 2);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Return a Value from a Function with Return
+// function timesFive(num) {
+//   return num * 5;
+// }
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Global Scope and Functions
+// // Declare the myGlobal variable below this line
+// let myGlobal = 10;
+// function fun1() {
+//   oopsGlobal = 5; // Assign 5 to oopsGlobal here
+// }
+// // Only change code above this line
+// function fun2() {
+//   let output = '';
+//   if (typeof myGlobal != 'undefined') {
+//     output += 'myGlobal: ' + myGlobal;
+//   }
+//   if (typeof oopsGlobal != 'undefined') {
+//     output += ' oopsGlobal: ' + oopsGlobal;
+//   }
+//   console.log(output);
+// }
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Local Scope and Functions
+// function myLocalScope() {
+//   // Only change code below this line
+//   const myVar = 'lorem';
+//   console.log('inside myLocalScope', myVar);
+// }
+// myLocalScope();
+
+// // Run and check the console
+// // myVar is not defined outside of myLocalScope
+// console.log('outside myLocalScope', myVar);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Global vs. Local Scope in Functions
+// // Setup
+// const outerWear = 'T-Shirt';
+
+// function myOutfit() {
+//   // Only change code below this line
+//   const outerWear = 'sweater';
+//   // Only change code above this line
+//   return outerWear;
+// }
+
+// myOutfit();
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Understanding Undefined Value returned from a Function
+// // Setup
+// let sum = 0;
+
+// function addThree() {
+//   sum = sum + 3;
+// }
+
+// // Only change code below this line
+// function addFive() {
+//   sum = sum + 5;
+// }
+// // Only change code above this line
+
+// addThree();
+// addFive();
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Assignment with a Returned Value
+// // Setup
+// let processed = 0;
+
+// function processArg(num) {
+//   return (num + 3) / 5;
+// }
+
+// // Only change code below this line
+// processed = processArg(7);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Stand in Line
+// function nextInLine(arr, item) {
+//   // Only change code below this line
+//   arr.push(item);
+//   return arr.shift();
+//   // Only change code above this line
+// }
+
+// // Setup
+// let testArr = [1, 2, 3, 4, 5];
+
+// // Display code
+// console.log('Before: ' + JSON.stringify(testArr));
+// console.log(nextInLine(testArr, 6));
+// console.log('After: ' + JSON.stringify(testArr));
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Understanding Boolean Values
+// function welcomeToBooleans() {
+//   // Only change code below this line
+//   return true; // Change this line
+//   // Only change code above this line
+// }
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Use Conditional Logic with If Statements
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+  if (wasThatTrue) return 'Yes, that was true';
+  return 'No, that was false';
+  // Only change code above this line
+}
 ////////////////////////////////////////
 
 ////////////////////////////////////////
