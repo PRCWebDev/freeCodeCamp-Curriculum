@@ -138,114 +138,224 @@ In this course, you'll learn how to use special characters, capture groups, posi
 
 ////////////////////////////////////////
 //  ? Match Characters that Occur One or More Times
-let difficultSpelling = 'Mississippi';
-let myRegex = /s+/g; // Change this line
-let result = difficultSpelling.match(myRegex);
+// let difficultSpelling = 'Mississippi';
+// let myRegex = /s+/g; // Change this line
+// let result = difficultSpelling.match(myRegex);
 
-console.log(result);
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match Characters that Occur Zero or More Times
+// let chewieQuote = 'Aaaaaaaaaaaaaaaarrrgh!';
+// // Only change code below this line
+// let chewieRegex = /Aa*/; // Change this line
+// // Only change code above this line
 
+// let result = chewieQuote.match(chewieRegex);
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Find Characters with Lazy Matching
+// let text = '<h1>Winter is coming</h1>';
+// let myRegex = /<.*?>/; // Change this line
+// let result = text.match(myRegex);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Find One or More Criminals in a Hunt
-
+// let reCriminals = /C+/; // Change this line
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match Beginning String Patterns
+// let rickyAndCal = 'Cal and Ricky both like racing.';
+// let calRegex = /^Cal/; // Change this line
+// let result = calRegex.test(rickyAndCal);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match Ending String Patterns
+// let caboose = 'The last car on a train is the caboose';
+// let lastRegex = /caboose$/; // Change this line
+// let result = lastRegex.test(caboose);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match All Letters and Numbers
+// let longHand = /[A-Za-z0-9_]+/;
+// let shortHand = /\w+/;
+// let numbers = '42';
+// let varNames = 'important_var';
+// longHand.test(numbers);
+// shortHand.test(numbers);
+// longHand.test(varNames);
+// shortHand.test(varNames);
 
+// let quoteSample = 'The five boxing wizards jump quickly.';
+// let alphabetRegexV2 = /\w/g; // Change this line
+// let result = quoteSample.match(alphabetRegexV2).length;
+
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match Everything But Letters and Numbers
+// let shortHand = /\W/;
+// let numbers = '42%';
+// let sentence = 'Coding!';
+// console.log(numbers.match(shortHand));
+// console.log(sentence.match(shortHand));
 
+// let quoteSample = 'The five boxing wizards jump quickly.';
+// let nonAlphabetRegex = /\W/g; // Change this line
+// let result = quoteSample.match(nonAlphabetRegex).length;
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match All Numbers
+// let movieName = '2001: A Space Odyssey';
+// let numRegex = /\d/g; // Change this line
+// let result = movieName.match(numRegex).length;
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match All Non-Numbers
+// let movieName = '2001: A Space Odyssey';
+// let noNumRegex = /\D/g; // Change this line
+// let result = movieName.match(noNumRegex).length;
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Restrict Possible Usernames
+/*
+Usernames are used everywhere on the internet. They are what give users a unique identity on their favorite sites.
+You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
+Usernames can only use alphanumeric characters.
+The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
+Username letters can be lowercase and uppercase.
+Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
+Change the regex userCheck to fit the constraints listed above.
+*/
+// let username = 'JackOfAllTrades';
+// let userCheck = /^[a-z][a-z]+\d*$|[a-z]\d\d+$/gi; // Change this line
+// let result = userCheck.test(username);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match Whitespace
+// let sample = 'Whitespace is important in separating words';
+// let countWhiteSpace = /\s/g; // Change this line
+// let result = sample.match(countWhiteSpace);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Match Non-Whitespace Characters
+// let sample = 'Whitespace is important in separating words';
+// let countNonWhiteSpace = /\S/g; // Change this line
+// let result = sample.match(countNonWhiteSpace);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Specify Upper and Lower Number of Matches
+// let ohStr = 'Ohhh no';
+// let ohRegex = /Oh{3,6}\sno/; // Change this line
+// let result = ohRegex.test(ohStr);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Specify Only the Lower Number of Matches
+// let haStr = 'Hazzzzah';
+// let haRegex = /Haz{4,}ah/; // Change this line
+// let result = haRegex.test(haStr);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Specify Exact Number of Matches
+// let timStr = 'Timmmmber';
+// let timRegex = /Tim{4}ber/; // Change this line
+// let result = timRegex.test(timStr);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Check for All or None
+// let favWord = 'favorite';
+// let favRegex = /favou?rite/; // Change this line
+// let result = favRegex.test(favWord);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Positive and Negative Lookahead
+// let password = 'abc123';
+// let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+// console.log(checkPass.test(password));
 
+// let sampleWord = 'astronaut';
+// let pwRegex = /(?=\w\w{5,})(?=\D*\d\d+)/; // Change this line
+// let result = pwRegex.test(sampleWord);
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Check For Mixed Grouping of Characters
+// let myString = 'Eleanor Roosevelt';
+// let myRegex = /(Eleanor|Franklin D.)\sRoosevelt/; // Change this line
+// let result = myRegex.test(myString); // Change this line
+// // After passing the challenge experiment with myString and see how the grouping works
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Reuse Patterns Using Capture Groups
+// let repeatNum = '42 42 42';
+// let reRegex = /^(\d+) \1 \1(?!.)/; // Change this line
+// let result = reRegex.test(repeatNum);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Use Capture Groups to Search and Replace
+// let str = 'one two three';
+// let fixRegex = /(\w+) (\w+) (\w+)/; // Change this line
+// let replaceText = '$3 $2 $1'; // Change this line
+// let result = str.replace(fixRegex, replaceText);
 
+// console.log(result);
 ////////////////////////////////////////
 
 ////////////////////////////////////////
 //  ? Remove Whitespace from Start and End
+let hello = '   Hello, World!  ';
+let wsRegex = /(^\s+|\s+$)/g; // Change this line
+let result = hello.replace(wsRegex, ''); // Change this line
 
+console.log(result);
 ////////////////////////////////////////
